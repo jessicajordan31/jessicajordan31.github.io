@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #F6F3EA;
+  --bg-alt: #ECE6D6;
+  --ink: #2B3A2E;
+  --ink-soft: #5B6B5A;
+  --sage: #8A9A7E;
+  --sage-deep: #4F5F45;
+  --accent: #2C3E57;       /* navy, light mode */
+  --accent-soft: #2C3E5714;
+  --line: #4F5F4530;
+  --line-strong: #4F5F4555;
+  --surface: #FFFFFFB0;
+ 
+  --font-display: 'Source Serif 4', Georgia, serif;
+  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+ 
+  color-scheme: light;
+}
+ 
+:root[data-theme="dark"] {
+  --bg: #1B2420;
+  --bg-alt: #232E28;
+  --ink: #E8E3D3;
+  --ink-soft: #AEB8A6;
+  --sage: #9FB093;
+  --sage-deep: #C7D4BC;
+  --accent: #B7A8D9;       /* lilac, dark mode */
+  --accent-soft: #B7A8D91c;
+  --line: #C7D4BC26;
+  --line-strong: #C7D4BC3d;
+  --surface: #FFFFFF08;
+ 
+  color-scheme: dark;
+}
