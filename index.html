@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jess Jordan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function () {
+            var saved = localStorage.getItem("theme");
+            if (saved === "light" || saved === "dark") {
+                document.documentElement.setAttribute("data-theme", saved);
+            }
+        })();
+    </script>
 </head>
 <body>
     <div class="section-title" id="intro">
@@ -161,6 +170,37 @@
             <p></p>
         </div>
     </div>
+    <script>
+        var root = document.documentElement;
+        var toggle = document.getElementById("themeToggle");
+        var icon = document.getElementById("themeIcon");
+        var label = document.getElementById("themeLabel");
+ 
+        function systemPrefersDark() {
+            return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        }
+ 
+        function currentTheme() {
+            var attr = root.getAttribute("data-theme");
+            if (attr === "light" || attr === "dark") return attr;
+            return systemPrefersDark() ? "dark" : "light";
+        }
+ 
+        function renderToggle() {
+            var isDark = currentTheme() === "dark";
+            icon.textContent = isDark ? "☀" : "◐";
+            label.textContent = isDark ? "Light mode" : "Dark mode";
+        }
+ 
+        toggle.addEventListener("click", function () {
+            var next = currentTheme() === "dark" ? "light" : "dark";
+            root.setAttribute("data-theme", next);
+            try { localStorage.setItem("theme", next); } catch (e) {}
+            renderToggle();
+        });
+ 
+        renderToggle();
+    </script>
     
 </body>
 </html>
