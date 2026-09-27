@@ -26,73 +26,96 @@
         <div class="section-title" id="intro">
             <div class="intro-layout">
                 <div class="photo">
-                    <img class="about-me-photo" src = "" width="500" height="550">
+                    <img class="about-me-photo" src = "/files/images/photo-of-me.png" width="700" height="750">
                 </div>
+                <br>
                 <div class="intro-copy">
                     <h1>Jess Jordan</h1>
-                    <h3 class="tagline">Incoming SWE @ USAA | Exploring Agentic AI & Systems Architecture | Computer Science & Economics B.A.</h3>
+                    <h3 class="tagline">Computer Science and Economics B.A.</h3>
+                    <h3 class="tagline">Currently <span class="tagline-word" id="typewriter" aria-live="polite"></span><span class="tagline-cursor" aria-hidden="true"></span></h3>
                 </div>
             </div>
             <h2>About Me</h2>
-            
-            <div class="text">
-                <p>Hello, World! I’m Jess Jordan, a student studying CS and Economics @ DePauw University.
-                I am enamored with technology, ethics, and the outdoors — I've been able to explore a lot of different areas in technology by 
-                building full-stack projects, a CI/CD pipeline, and a vulnerability remediator AI agent.
-                
-                My expertise in ethical analysis and my leadership roles in various on-campus organizations demonstrate my interdisciplinary 
-                knowledge and dedication to inclusive, efficient, and sustainable coding practices.
-                </p>
-            </div>
-            <div class="social-media-container">
-                <button class="social-media" id="linkedin"><a href="https://www.linkedin.com/in/jessica-jordan31/">LinkedIn</a></button>
-                <button class="social-media" id="gitHub"><a href="https://github.com/jessicajordan31">GitHub</a></button>
-                <div class = "resume-button">
-                    <button>
-                    <a href="/files/Jessica_Jordan_Resume_2026 copy.pdf">Download Resume</a>
-                    </button>
+            <div class="about-layout">
+                <div class="text">
+                    <p>Hello, World! I’m Jess Jordan, a student studying CS and Economics @ DePauw University.
+                    I am enamored with technology, ethics, and the outdoors — I've been able to explore a lot of different areas in technology by 
+                    building full-stack projects, a CI/CD pipeline, and a vulnerability remediator AI agent.
+                    
+                    My expertise in ethical analysis and my leadership roles in various on-campus organizations demonstrate my interdisciplinary 
+                    knowledge and dedication to inclusive, efficient, and sustainable coding practices.
+                    </p>
+                    <p> I also love the traveling! I have been around the U.S., Europe, and am currently planning a trip to Thailand with my family.
+                        I have two cats, Jake and Beep.
+                    </p>
+                    <div class="social-media-container">
+                        <button class="social-media" id="linkedin"><a href="https://www.linkedin.com/in/jessica-jordan31/">LinkedIn</a></button>
+                        <button class="social-media" id="gitHub"><a href="https://github.com/jessicajordan31">GitHub</a></button>
+                        <div class = "resume-button">
+                            <button>
+                            <a href="/files/Jessica_Jordan_Resume_2026 copy.pdf">Download Resume</a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
+                <aside class="quick-facts">
+                    <h4>Quick Facts</h4>
+                    <ul>
+                        <li><span class="fact-label">Based in</span>Park City, UT</li>
+                        <li><span class="fact-label">Currently</span>Incoming SWE @ USAA</li>
+                        <li><span class="fact-label">Exploring</span>Agentic AI, Systems Architecture, &amp; Labor Economics</li>
+                        <li><span class="fact-label">Next trip</span>Thailand, with family Dec '26</li>
+                    </ul>
+                </aside>
             </div>
-
         </div>
         <div class="skills">
             <h2>Technical Skills</h2>
             <div class="skill-container" id="languages">
                 <h3 class="skill-title"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9C9 9 6.5 7 6 4c3.5-1 6.5.5 7.5 3"/><path d="M12 13c3 0 5.5-2 6-5-3.5-1-6.5.5-7.5 3"/></svg></span>Languages</h3>
-                <button id="languages">C++</button>
-                <button id="languages">Python</button>
-                <button id="languages">JavaScript</button>
-                <button id="languages">Java</button>
-                <button id="languages">SQL</button>
+                <div class="skill-grid">
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/cplusplus/cplusplus-original.svg" alt="" onerror="skillFallback(this,'C++')"><span>C++</span></div>
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/python/python-original.svg" alt="" onerror="skillFallback(this,'Py')"><span>Python</span></div>
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/javascript/javascript-original.svg" alt="" onerror="skillFallback(this,'JS')"><span>JavaScript</span></div>
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/java/java-original.svg" alt="" onerror="skillFallback(this,'Java')"><span>Java</span></div>
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/mysql/mysql-original.svg" alt="" onerror="skillFallback(this,'SQL')"><span>SQL</span></div>
+                </div>
             </div>
             <div class="skill-container" id="frontend">
                 <h3 class="skill-title"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9C9 9 6.5 7 6 4c3.5-1 6.5.5 7.5 3"/><path d="M12 13c3 0 5.5-2 6-5-3.5-1-6.5.5-7.5 3"/></svg></span>Frontend</h3>
-                <button id="frontend">React</button>
-                <button id="frontend">Vue</button>
-                <button id="frontend">HTML/CSS</button>
+                <div class="skill-grid">
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/react/react-original.svg" alt="" onerror="skillFallback(this,'Rct')"><span>React</span></div>
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/vuejs/vuejs-original.svg" alt="" onerror="skillFallback(this,'Vue')"><span>Vue</span></div>
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/html5/html5-original.svg" alt="" onerror="skillFallback(this,'HTML')"><span>HTML/CSS</span></div>
+                </div>
             </div>
             <div class="skill-container" id="backend">
                 <h3 class="skill-title"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9C9 9 6.5 7 6 4c3.5-1 6.5.5 7.5 3"/><path d="M12 13c3 0 5.5-2 6-5-3.5-1-6.5.5-7.5 3"/></svg></span>Backend &amp; Databases</h3>
-                <button id="backend">Node.js</button>
-                <button id="backend">Express.js</button>
-                <button id="databases">MongoDB</button>
-                <button id="databases">Google Firebase</button>
+                <div class="skill-grid">
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/nodejs/nodejs-original.svg" alt="" onerror="skillFallback(this,'Node')"><span>Node.js</span></div>
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/express/express-original.svg" alt="" onerror="skillFallback(this,'Exp')"><span>Express.js</span></div>
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/mongodb/mongodb-original.svg" alt="" onerror="skillFallback(this,'Mongo')"><span>MongoDB</span></div>
+                    <div class="skill-tile"><img src="/files/images/firebase-logo.png" alt="" onerror="skillFallback(this,'Firebase')"><span>Google Firebase</span></div>
+                </div>
             </div>
             <div class="skill-container" id="devops">
                 <h3 class="skill-title"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9C9 9 6.5 7 6 4c3.5-1 6.5.5 7.5 3"/><path d="M12 13c3 0 5.5-2 6-5-3.5-1-6.5.5-7.5 3"/></svg></span>DevOps &amp; Security</h3>
-                <button id="devtools">Docker</button>
-                <button id="devtools">Jenkins</button>
-                <button id="data-analytics">Trivy</button>
-                <button id="data-analytics">Git</button>
+                <div class="skill-grid">
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/docker/docker-original.svg" alt="" onerror="skillFallback(this,'Dkr')"><span>Docker</span></div>
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/jenkins/jenkins-original.svg" alt="" onerror="skillFallback(this,'Jnk')"><span>Jenkins</span></div>
+                    <div class="skill-tile"><img src="/files/images/trivy-logo.png" alt="" onerror="skillFallback(this,'Trivy')"><span>Trivy</span></div>
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/git/git-original.svg" alt="" onerror="skillFallback(this,'Git')"><span>Git</span></div>
+                </div>
             </div>
             <div class="skill-container" id="data-tools">
                 <h3 class="skill-title"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9C9 9 6.5 7 6 4c3.5-1 6.5.5 7.5 3"/><path d="M12 13c3 0 5.5-2 6-5-3.5-1-6.5.5-7.5 3"/></svg></span>Data &amp; AI Tools</h3>
-                <button id="data-analytics">DataDog</button>
-                <button id="data-analytics">Grafana</button>
-                <button id="data-analytics">Fortuna</button>
-                <button id="data-analytics">Kibana</button>
-                <button id="data-analytics">NumPy</button>
-                <button id="data-analytics">OpenAI API</button>
+                <div class="skill-grid">
+                    <div class="skill-tile"><img src="/files/images/datadog-logo.svg" alt="" onerror="skillFallback(this,'DD')"><span>DataDog</span></div>
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/grafana/grafana-original.svg" alt="" onerror="skillFallback(this,'Grf')"><span>Grafana</span></div>
+                    <div class="skill-tile"><img src="/files/images/kibana-elastic-logo.png" alt="" onerror="skillFallback(this,'Kibana Elastic')"><span>Kibana Elastic</span></div>
+                    <div class="skill-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/numpy/numpy-original.svg" alt="" onerror="skillFallback(this,'Np')"><span>NumPy</span></div>
+                    <div class="skill-tile"><img src="/files/images/open-ai-logo.svg" alt="" onerror="skillFallback(this,'OpenAI API')"><span>OpenAI API</span></div>
+                </div>
             </div>
             <div class="certficiates">
                 <h3 class="skill-title"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9C9 9 6.5 7 6 4c3.5-1 6.5.5 7.5 3"/><path d="M12 13c3 0 5.5-2 6-5-3.5-1-6.5.5-7.5 3"/></svg></span>Certificates</h3>
@@ -113,40 +136,62 @@
         <div class="projects">
             <h2>Projects</h2>
             <div class="proj-container">
-                <h3>DeP10 Extension for Pep/10</h3>
-                <p>Extended Pep/10 Assembly Language with 16-bit and 32-bit multiplication/division functions via the stack and the Accumulator Register, removing instruction-set limitations for 15-20 students per Compilers and OS course</p>
-                <a href="https://github.com/jessicajordan31/DeP10">View GitHub repo</a>
+                <div class="proj-content"> 
+                    <h3>Undergraduate Research: DeP10 Extension for Pep/10</h3>
+                    <p>Extended Pep/10 Assembly Language with 16-bit and 32-bit multiplication/division functions via the stack and the Accumulator Register, removing instruction-set limitations for 15-20 students per Compilers and OS course.</p>
+                    <a href="https://github.com/jessicajordan31/DeP10">View GitHub repo</a>
+                </div>
             </div>
             <div class="proj-container">
-                <h3>Data Mining Project - Predicting Book Bestseller Duration</h3>
-                <p>This project, co-created with Shelby Stall, investigates which book attributes are most strongly associated with bestseller status and duration by integrating reader reviews with bestseller list data, including author frequency. TF-IDF, VSM, and SVD algorithms are employed before performing OLS and KNN regression.</p>
-                <a href="https://github.com/jessicajordan31/Data-Mining-Project">View GitHub repo</a>
-                <a href="https://drive.google.com/file/d/1Z7NnX8LLkc2TRmXGF6sYvP1eWdSmNJ1t/view?usp=sharing">View paper.</a>
+                <div class="proj-content">
+                    <h3>Data Mining Project - Predicting Book Bestseller Duration</h3>
+                    <p>This project, co-created with Shelby Stall, investigates which book attributes are most strongly associated with bestseller status and duration by integrating reader reviews with bestseller list data, including author frequency. TF-IDF, VSM, and SVD algorithms are employed before performing OLS and KNN regression.</p>
+                    <a href="https://github.com/jessicajordan31/Data-Mining-Project">View GitHub repo.</a>
+                    <a href="https://drive.google.com/file/d/1Z7NnX8LLkc2TRmXGF6sYvP1eWdSmNJ1t/view?usp=sharing"> View paper.</a>
+                </div>
             </div>
             <div class="proj-container">
-                <h3>My GrocerPal</h3>
-                <img id="grocerpal" src="/files/images/my-grocerpal-project.png"/>
-                <p>A full-stack REST API web-application with Express.js and MongoDB</p>
-                <a href="https://github.com/jessicajordan31">View GitHub repo</a>
+                <div class="proj-media">
+                    <div class="media-frame">
+                        <img id="grocerpal" src="/files/images/my-grocerpal-project.png" alt="My GrocerPal project screenshot">
+                    </div>
+                </div>
+                <div class="proj-content">
+                    <h3>My GrocerPal</h3>
+                    <p>A full-stack REST API web-application with Express.js and MongoDB</p>
+                    <a href="https://github.com/jessicajordan31">View GitHub repo</a>
+                </div>
+            </div>
+            <div class="proj-container reverse">
+                <div class="proj-media">
+                    <div class="media-frame">
+                        <img src="/files/images/cicd-pipeline.jpg" alt="CI/CD pipeline diagram">
+                    </div>
+                </div>
+                <div class="proj-content">
+                    <h3>CI/CD Pipeline</h3>
+                    <p>Wrote Jenkins test suites validating API endpoints, cookie configuration, and response headers, catching authentication and CORS misconfigurations pre-deployment. Co-developed with Anna Nguyen.</p>
+                    <a href="https://github.com/annanguyen89/secure-cicd">View GitHub repo</a>
+                </div>
             </div>
             <div class="proj-container">
-                <h3>CI/CD Pipeline</h3>
-                <img src="/files/images/cicd-pipeline.jpg"/>
-                <p>Wrote Jenkins test suites validating API endpoints, cookie configuration, and response headers, catching authentication and CORS misconfigurations pre-deployment</p>
-                <a href="https://github.com/annanguyen89/secure-cicd">View GitHub repo</a>
-            </div>
-            <div class="proj-container">
-                <h3>Her Capital</h3>
-                <img src="/files/images/her-capital-connect.png"/>
-                <p>Frontend finance advice website for women. Co-developed with Ella Jones and Preeyanti Sen.</p>
-                <a href="https://github.com/jessicajordan31/project-1-part-2#description">View GitHub repo</a>
+                <div class="proj-media">
+                    <div class="media-frame">
+                        <img src="/files/images/her-capital-connect.png" alt="Her Capital project screenshot">
+                    </div>
+                </div>
+                <div class="proj-content">
+                    <h3>Her Capital</h3>
+                    <p>Frontend finance advice website for women. Co-developed with Ella Jones and Preeyanti Sen.</p>
+                    <a href="https://github.com/jessicajordan31/project-1-part-2#description">View GitHub repo</a>
+                </div>
             </div>
         </div>
         <div class="tech-experience">
             <h2>Tech Experience</h2>
             <div class="experience-section" id="usaa">
                 <h3 class="experience-title">USAA - Software Engineer Intern</h3>
-                <p>Engineered Python dependency detection and package resolution for pip/pipenv/poetry/uv in a Vulnerability Remediation agent, adding validation tests and reducing CVE remediation time by 83%</p>
+                <p>Engineered Python dependency detection and package resolution for pip/pipenv/poetry/uv in a Vulnerability Remediation agent, adding validation tests and reducing CVE remediation time by 83%.</p>
             </div>
             <div class="experience-section" id="ai-glow">
                 <h3 class="experience-title">AI Glow - Startup Software Engineer Intern</h3>
@@ -177,6 +222,56 @@
             </div>
         </div>
     </div>
+    <script>
+        function skillFallback(img, initials) {
+            var badge = document.createElement("div");
+            badge.className = "skill-fallback";
+            badge.textContent = initials;
+            img.replaceWith(badge);
+        }
+    </script>
+    <script>
+        var tw = document.getElementById("typewriter");
+        var twWords = ["drinking coffee", "studying", "building", "in class", "hiking", "hammocking", "deploying"];
+        var twReduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+ 
+        if (tw) {
+            if (twReduced) {
+                tw.textContent = twWords[0];
+        } else {
+            (function typewriter() {
+                var wordIndex = 0, charIndex = 0, deleting = false;
+                var TYPE_MS = 50, DELETE_MS = 40, HOLD_MS = 1800, GAP_MS = 300;
+ 
+            function tick() {
+                var current = twWords[wordIndex];
+                if (!deleting) {
+                    charIndex++;
+                    tw.textContent = current.slice(0, charIndex);
+                if (charIndex === current.length) {
+                  deleting = true;
+                  setTimeout(tick, HOLD_MS);
+                  return;
+                }
+                    setTimeout(tick, TYPE_MS);
+                } else {
+                    charIndex--;
+                    tw.textContent = current.slice(0, charIndex);
+                    if (charIndex === 0) {
+                        deleting = false;
+                        wordIndex = (wordIndex + 1) % twWords.length;
+                        setTimeout(tick, GAP_MS);
+                        return;
+                    }
+                    setTimeout(tick, DELETE_MS);
+                    }
+                }
+                tick();
+                })();
+            }
+        }
+    </script>
+
     <script>
         var root = document.documentElement;
         var toggle = document.getElementById("themeToggle");
