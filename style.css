@@ -34,3 +34,42 @@
  
   color-scheme: dark;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1B2420;
+    --bg-alt: #232E28;
+    --ink: #E8E3D3;
+    --ink-soft: #AEB8A6;
+    --sage: #9FB093;
+    --sage-deep: #C7D4BC;
+    --accent: #B7A8D9;
+    --accent-soft: #B7A8D91c;
+    --line: #C7D4BC26;
+    --line-strong: #C7D4BC3d;
+    --surface: #FFFFFF08;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+ 
+html {
+  scroll-behavior: smooth;
+}
+ 
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+ 
+::selection {
+  background: var(--accent-soft);
+  color: var(--ink);
+}
