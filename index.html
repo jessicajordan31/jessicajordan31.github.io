@@ -17,6 +17,13 @@
 <body>
     <div class="topbar">
         <span class="topbar-name">Jess Jordan</span>
+        <nav class="topbar-nav" aria-label="Section navigation">
+            <a href="#intro">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
             <span class="icon" id="themeIcon">◐</span>
             <span id="themeLabel">Dark mode</span>
@@ -69,7 +76,7 @@
                 </aside>
             </div>
         </div>
-        <div class="skills">
+        <div class="skills" id="skills">
             <h2>Technical Skills</h2>
             <div class="skill-container" id="languages">
                 <h3 class="skill-title"><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9C9 9 6.5 7 6 4c3.5-1 6.5.5 7.5 3"/><path d="M12 13c3 0 5.5-2 6-5-3.5-1-6.5.5-7.5 3"/></svg></span>Languages</h3>
@@ -133,7 +140,7 @@
                 </div>
             </div>
         </div>
-        <div class="projects">
+        <div class="projects" id="projects">
             <h2>Projects</h2>
             <div class="proj-container">
                 <div class="proj-content"> 
@@ -187,7 +194,7 @@
                 </div>
             </div>
         </div>
-        <div class="tech-experience">
+        <div class="tech-experience" id="experience">
             <h2>Tech Experience</h2>
             <div class="experience-section" id="usaa">
                 <h3 class="experience-title">USAA - Software Engineer Intern</h3>
@@ -221,6 +228,9 @@
                 <p></p>
             </div>
         </div>
+        <footer class="site-footer">
+            <p class="last-updated">Last updated: 09/27/26</p>
+        </footer>
     </div>
     <script>
         function skillFallback(img, initials) {
